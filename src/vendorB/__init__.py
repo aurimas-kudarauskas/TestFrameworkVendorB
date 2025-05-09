@@ -1,1 +1,1 @@
-from .vendorB import *
+from .deviceXXA import *

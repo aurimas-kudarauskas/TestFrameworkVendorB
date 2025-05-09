@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "Vendor B"
+name = "Vendor_B"
 version = "0.0.1"
 authors = [
   { name="Aurimas Kudarauskas"},
@@ -22,5 +22,5 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
-[project.scripts]
-test_framework= "test_framework.bin.test_framework:main"
+[tool.hatch.build.targets.wheel]
+      packages = ["src/vendorB"]
